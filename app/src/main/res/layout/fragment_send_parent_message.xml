@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.noticeBoardFragments.SendParentMessageFragment"
+    android:background="@color/colorPrimary">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lrlyParentMessageStudentDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvParentMessagetudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Student Name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/lrlyParentMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Class"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/card_text" />
+
+                <TextView
+                    android:id="@+id/tvParentMessageClass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Roll No"
+                    android:textAlignment="center"
+                    android:textColor="@color/card_text"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/tvParentMessageRollNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/edtSendParentMessage"
+       android:hint="@string/key_Parent_Message"
+       android:textColorHint="@color/white"
+       android:cursorVisible="true"
+       android:padding="10dp"
+       android:layout_margin="10dp"
+       android:textColor="@color/white"
+       android:minLines="3"
+       android:maxLines="15"
+       android:inputType="textMultiLine"
+       android:textCursorDrawable="@drawable/black_cursor"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSendParentMessage"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="@string/key_Send_Parent_Message"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"/>
+    </LinearLayout>
+</FrameLayout>

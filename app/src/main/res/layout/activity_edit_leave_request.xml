@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.daytoday.EditLeaveRequestActivity">
+ <TextView
+     android:layout_marginTop="10dp"
+
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textSize="18dp"
+        android:textAlignment="center"
+     android:textColor="@color/card_text"
+     android:text=" : Leave reason :"/>
+
+<TextView
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvEdtLeaveTitle"
+    android:textSize="18dp"
+    android:textAlignment="center"
+    android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/card_text"
+        android:text=" : Leave Description :"/>
+
+    <EditText
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEdtLeaveDescrption"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:hint="Leave discription"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:textColor="@color/white"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:layout_marginTop="5dp">
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="From : "
+        android:textColor="@color/card_text"
+        android:textSize="18dp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="To : "
+        android:textSize="18dp"
+        android:textColor="@color/card_text"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="5dp">
+    <EditText
+
+        android:id="@+id/edt_editLeave_from_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="From Date"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:layout_weight="1"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/tv_editLeave_from_date"
+        android:layout_width="0dp"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/edt_editLeave_to_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:hint="To Date"
+        android:textSize="18dp"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:layout_weight="1"
+        android:editable="false" />
+</LinearLayout>
+<Button
+    android:id="@+id/btnEditStudentLeaveDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/key_Edit_Student_Leave"
+    android:textColor="@color/white"
+    android:layout_margin="5dp"
+    android:background="@drawable/button_shape"/>
+</LinearLayout>

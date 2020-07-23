@@ -1,0 +1,40 @@
+{"OperationName":"HomeWork_Insert","homeworkData":{"Date":"18-01-2018","StaffId":"2","SubjectId":"8",
+"ClassId": "5","Chapter":"bbbbb","Description":"quesion answer"}}
+
+feedback insert
+{"OperationName":"homeworkFeedback_Insert",
+"homeworkData":{"HomeworkId":"33","EnteredBy":"2","StudentId": "7", "Status":"0","Date":"18-01-2018"}}
+
+exam schedule insert 
+{"OperationName":"setStaffexamSchdule","examData":{"SubjectId":"8","SetBy":"2","SetDate":"21-01-2018 10:30",
+"ExamOnDate":"22-02-2018 12:30","ClassId":"5","ExamId":"1"}}
+
+if(resId>0)
+{
+	 outObject.put("Status", "Success");
+	 outObject.put("Message", "inserted sucessfully");
+}else if(resId==-1){
+	 outObject.put("Status", "fail");
+	 outObject.put("Message", " record already inserted ");
+} else {
+	outObject.put("Status", "fail");
+	 outObject.put("Message", " record was not inserted");
+}
+
+
+exam syllabus insert
+{"OperationName":"setStaffExamSyllabus","examData":{"SubjectId":"8","SetBy":"2","SetDate":"21-01-2018 10:30",
+"ExamOnDate":"22-02-2018 12:30","ClassId":"5","ExamId":"1","Syllabus":"ahskasddsa savaasjd saKHgskajs "}}
+
+
+{"OperationName":"getStaffhomeworkFeedback","homeworkData":{"ClassId":"5"}}
+
+{"OperationName":"getStaffhomeworkFeedbackDateWise","homeworkData":{"ClassId":"5","Date":"2017-11-09"}}
+
+{"OperationName":"setStaffParentsNote","noticeBoardData":{"SchoolId":"3", "AcademicYearId":"2", "SentBy":"2",
+"ClassId":"5","StudentId":"5","NoteSentDate":"12-01-2018","NoticeTitle":"1","NoteOtherTitle":"abc notice",
+"Note":"jkashdj","NoteOnDate":"22-01-2018"}}
+
+
+{"OperationName":"getParentNoteTitle","noticeBoardData":{"SchoolId":"3"}}
+{"OperationName":"getClasswiseStudentsList","classSubjectData":{"ClassId":"5"}}

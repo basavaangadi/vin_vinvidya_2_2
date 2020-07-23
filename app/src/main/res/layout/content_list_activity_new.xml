@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vinuthana.vinvidya.activities.extraactivities.ListActivity_new"
+    tools:showIn="@layout/activity_list_new">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Hello"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ListView
+        android:id="@+id/activityMenuListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:dividerHeight="2dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/tvStatus" />
+
+</RelativeLayout>

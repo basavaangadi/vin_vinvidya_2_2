@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+                android:weightSum="4"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edt_from_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:layout_weight="2"
+                android:gravity="center"
+                android:hint="From"
+                android:focusable="false"
+                android:editable="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edt_to_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="To"
+                android:inputType="number"
+                android:focusable="false"
+                android:editable="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tview_no_of_leaves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="21dp" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/sp_leave_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tooltipText="Reason"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+           android:dropDownSelector="@drawable/black_cursor"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edt_lv_reason  "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:hint="LeaveReson"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/edt_lv_disc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:cursorVisible="true"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@layout/white_cursor"
+            android:hint="Mention the reason for leave" />
+
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:cursorVisible="true"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@layout/white_cursor"
+            android:hint=" enter Password" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:text="submit" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

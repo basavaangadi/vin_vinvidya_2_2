@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_date">Date</string>
+    <string name="key_day">Day</string>
+    <string name="key_status">Status</string>
+    <string name="key_login">Sign In</string>
+    <string name="key_Assignment">Assignment</string>
+    <string name="key_company">Powered By Vinuthana</string>
+    <string name="key_btn_get_parent_note">Get Parent Note</string>
+    <string name="key_btn_get_Class_note">Get Class Note</string>
+    <string name="key_search_by_note_sent_date">Search By Note Sent Date</string>
+    <string name="key_search_by_note_on_date">Search By Note On Date</string>
+    <string name="key_btn_NoticeByDate">Get Notice</string>
+    <string name="key_search_by_notice_sent_date">Search By Note Sent Date</string>
+    <string name="key_search_by_notice_on_date">Search By Note On Date</string>
+    <string name="key_atnd_by_date">Attendance By Date</string>
+    <string name="key_btn_atnd_by_date">Get Attendance</string>
+    <string name="key_hw_by_date">Home Work By Date</string>
+    <string name="key_hw_from_date">Homework from Date</string>
+    <string name="key_hw_to_date">Home Work to Date</string>
+    <string name="key_btn_hw_by_date">Get Home Work</string>
+    <string name="key_hwfeedback_by_date">Home Work Feedback By Date</string>
+    <string name="key_hwfeedback_from_date">Home Work Feedback from Date</string>
+    <string name="key_hwfeedback_to_date">Home Work Feedback To Date</string>
+    <string name="key_btn_hwfeedbak_by_date">Get Home Work Feedback</string>
+    <string name="key_reminder_from_date">Search Reminder By Date</string>
+    <string name="key_reminder_to_date">Search Reminder from Date</string> <string name="key_reminder_by_date">Search Reminder By Date</string>
+    <string name="key_reminder_by_date_on">Search Reminder To Date</string>
+    <string name="key_btn_reminder_by_date">Get Reminder</string>
+    <string name="key_btn_exam_by_marks_exam">Get Exam Marks</string>
+    <string name="key_btn_exam_syllabus_by_exam">Get Exam Syllabus</string>
+    <string name="key_btn_schedule_by_exam">Get Exam Schedule</string>
+    <string name="key_tv_forgot_password"><u>Forgot Password?</u></string>
+    <string name="key_btn_continue">Continue</string>
+    <string name="key_forgot_pwd_email_mno">Email/Phone Number</string>
+    <string name="key_sign_in"><u>Sign In</u></string>
+    <string name="key_tv_change_password"><u>Change Password</u></string>
+    <string name="key_tv_sign_up"><u>Create Account</u></string>
+    <string name="key_tv_sign_in"><u>Sign In</u></string>
+    <string name="key_btn_register">Register</string>
+    <string name="key_btn_change_pwd">Change Password</string>
+</resources>

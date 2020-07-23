@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.examSectionFragments.CurrentExamMarksGDGB"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/tvCurrentMarksStudentGDGB"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="4"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:text="Class: "
+             android:textColor="@color/card_text"
+             android:layout_weight="1"
+             android:textSize="16dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tvCurrentMarksClassGDGB"
+             android:textColor="@color/white"
+             android:layout_weight="1"
+             android:textSize="16dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Exam: "
+             android:textColor="@color/card_text"
+             android:layout_weight="1"
+             android:textSize="16dp"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tvCurrentMarksExamGDGB"
+             android:textColor="@color/white"
+             android:layout_weight="1"
+             android:textSize="16dp"/>
+     </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/crdViewCurExmMrkGDGB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvDateGDGB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Subject"
+
+                android:textColor="@color/card_text"
+                android:textSize="18dp" />
+
+
+
+            <TextView
+                android:id="@+id/tvSyllabusGDGB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Grade"
+                android:textAlignment="viewEnd"
+                android:layout_gravity="end"
+                android:textColor="@color/card_text"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/crdViewCurExmMrkBKBI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tvCurExamMarksDateBKBI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Date"
+                android:textColor="@color/card_text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvCurExamMarksSubjectBKBI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Sub"
+                android:textColor="@color/card_text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvCurExamMarksMAxMarksBKBI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Max"
+                android:textColor="@color/card_text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvCurExamMarksGradeBKBI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Marks"
+                android:textAlignment="viewEnd"
+                android:layout_gravity="end"
+                android:textColor="@color/card_text"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewExmMrkGDGB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:contentPadding="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/crdViewTotalGradeGDGB">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Tot Grade"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/card_text"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvExmMrkTotalGDGB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_text"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:layout_gravity="end"
+                        android:textSize="18dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
