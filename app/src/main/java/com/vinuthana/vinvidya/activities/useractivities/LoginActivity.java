@@ -163,6 +163,7 @@ public class LoginActivity extends AppCompatActivity {
         ProgressDialog progressDialog;
         String studentId;
         String url = AD.url.base_url + "userOperations.jsp";
+        //String url ="http://192.168.43.155:8080/netvinvidyawebapi/operation/userOperations.jsp";
         Context mContext;
         SharedPreferences pref;
         String status = "";

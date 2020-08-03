@@ -152,6 +152,7 @@ public class LandingActivity extends AppCompatActivity {
         ProgressDialog progressDialog;
         String strPhoneNo,strAcademicYearId;
         String url = AD.url.base_url + "userOperations.jsp";
+        //String url ="http://192.168.43.155:8080/netvinvidyawebapi/operation/userOperations.jsp";
 
         @Override
         protected void onPreExecute() {
