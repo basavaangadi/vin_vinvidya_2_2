@@ -30,8 +30,14 @@
     <string name="key_btn_exam_by_marks_exam">Get Exam Marks</string>
     <string name="key_btn_exam_syllabus_by_exam">Get Exam Syllabus</string>
     <string name="key_btn_schedule_by_exam">Get Exam Schedule</string>
+    <string name="key_btn_GetQuestion_Paper">Get Question Paper</string>
+    <string name="key_btn_UploadAnswer_Sheets">Upload Answer Sheets</string>
+
     <string name="key_tv_forgot_password"><u>Forgot Password?</u></string>
     <string name="key_btn_continue">Continue</string>
+    <string name="key_btn_view_fees_collected">View Fees Details</string>
+    <string name="key_btn_Choose_image">Take Answer Sheet Pic</string>
+    <string name="key_btn_Upload_image">Upload Answer Sheet</string>
     <string name="key_forgot_pwd_email_mno">Email/Phone Number</string>
     <string name="key_sign_in"><u>Sign In</u></string>
     <string name="key_tv_change_password"><u>Change Password</u></string>

@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".app.App"
@@ -18,7 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.otheractivities.AdmissionFeesActivity"></activity>
+        <activity android:name=".activities.examsection.PdfActivity"></activity>
+        <activity android:name=".activities.examsection.UploadAnswersActivity" />
+        <activity android:name=".activities.examsection.WriteExamActivity" />
+        <activity android:name=".activities.examsection.ExamImageUploadActivity" />
+        <activity android:name=".activities.otheractivities.AdmissionFeesActivity" />
         <activity
             android:name=".activities.extraactivities.SplashScreen"
             android:label="@string/app_name"

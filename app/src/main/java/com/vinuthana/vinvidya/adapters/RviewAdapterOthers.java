@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.vinuthana.vinvidya.R;
+import com.vinuthana.vinvidya.activities.examsection.ExamImageUploadActivity;
 import com.vinuthana.vinvidya.activities.otheractivities.AdmissionFeesActivity;
 import com.vinuthana.vinvidya.activities.otheractivities.AssignmentActivity;
 import com.vinuthana.vinvidya.activities.otheractivities.EventsActivity;
@@ -96,6 +97,8 @@ public class RviewAdapterOthers extends RecyclerView.Adapter<RviewAdapterOthers.
                         intent.putExtra("studentId", strStudentId);
                         intent.putExtra("schoolId", strSchoolId);
                         break;
+
+
 
                     default:
                         break;

@@ -12,9 +12,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.vinuthana.vinvidya.R;
+import com.vinuthana.vinvidya.activities.examsection.ExamImageUploadActivity;
 import com.vinuthana.vinvidya.activities.examsection.ExamMarksActivity;
 import com.vinuthana.vinvidya.activities.examsection.ExamScheduleActivity;
 import com.vinuthana.vinvidya.activities.examsection.ExamSyllabusActivity;
+import com.vinuthana.vinvidya.activities.examsection.WriteExamActivity;
 import com.vinuthana.vinvidya.utils.StudentSPreference;
 
 import java.util.ArrayList;
@@ -87,6 +89,12 @@ public class RviewAdapterExamSection extends RecyclerView.Adapter<RviewAdapterEx
                         intent.putExtra("studentId", strStudentId);
                         intent.putExtra("schoolId", strSchoolId);
                         break;
+                    case 3:
+                        intent = new Intent (context, WriteExamActivity.class);
+                        intent.putExtra("studentId", strStudentId);
+                        intent.putExtra("schoolId", strSchoolId);
+                        break;
+
                     default:
                         break;
                 }

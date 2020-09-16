@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> titleNoticeBoard = new ArrayList<>(Arrays.asList("Notice", "Parent note","Class Notice" ,"Reminder"));
     ArrayList<Integer> imagesNoticeBoard = new ArrayList<>(Arrays.asList(R.drawable.ic_clipboard_outline_black_48dp, R.drawable.people_connect_icon, R.drawable.presentation,R.drawable.ic_bell_ring_black_36dp));
 
-    ArrayList<String> titleExamSection = new ArrayList<>(Arrays.asList("Exam Schedule", "Exam Syllabus", "Exam Marks"));
-    ArrayList<Integer> imagesExamSection = new ArrayList<>(Arrays.asList(R.drawable.ic_calendar_multiple_check_black_36dp, R.drawable.ic_book_open_variant_black_36dp, R.drawable.ic_format_list_numbers_black_36dp));
+    ArrayList<String> titleExamSection = new ArrayList<>(Arrays.asList("Exam Schedule", "Exam Syllabus", "Exam Marks","Write Exam"));
+    ArrayList<Integer> imagesExamSection = new ArrayList<>(Arrays.asList(R.drawable.ic_calendar_multiple_check_black_36dp, R.drawable.ic_book_open_variant_black_36dp, R.drawable.ic_format_list_numbers_black_36dp,R.drawable.ic_photo_black_24dp));
 
     ArrayList<String> titleOthers = new ArrayList<>(Arrays.asList("Events", "Gallery", "Syllabus","Assignment","Fees Section"));
     ArrayList<Integer> imagesOthers = new ArrayList<>(Arrays.asList(R.drawable.ic_calendar_check_black_48dp, R.drawable.ic_folder_multiple_image_black_48dp, R.drawable.ic_book_open_variant_black_48dp,R.drawable.ic_assignment_24dp,R.drawable.ic_attach_money_black_24dp));

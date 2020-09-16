@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.vinuthana.vinvidya"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 42
         versionName "20.08.01"

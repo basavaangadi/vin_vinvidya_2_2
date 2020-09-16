@@ -245,4 +245,7 @@
     <string name="web_getStaffExamName">getStaffExamName</string>
     <string name="title_activity_class_notice">ClassNoticeActivity</string>
     <string name="title_activity_parents_message">ParentsMessageActivity</string>
+    <string name="web_getClasswiseSubjects">getClasswiseSubjects</string>
+    <string name="web_getQuestionPaper">GetQuestionPaper</string>
+
 </resources>
