@@ -64,6 +64,38 @@ public class ExamSyllabusRecycler extends RecyclerView.Adapter<ExamSyllabusRecyc
            // tvSyllabusExm = (TextView) itemView.findViewById(R.id.tvSyllabusExm);
             tvDtExmSyllabus = (TextView) itemView.findViewById(R.id.tvDtExmSyllabus);
             tvSyllabusExmSyllabus = (TextView) itemView.findViewById(R.id.tvSyllabusExmSyllabus);
+
+            tvSubjectExmSyllabus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmsylcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSubjectExmSyllabus.getText());
+                    Toast.makeText(exmsylcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvDtExmSyllabus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmsylcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDtExmSyllabus.getText());
+                    Toast.makeText(exmsylcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvSyllabusExmSyllabus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmsylcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSyllabusExmSyllabus.getText());
+                    Toast.makeText(exmsylcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
+
         }
     }
 }

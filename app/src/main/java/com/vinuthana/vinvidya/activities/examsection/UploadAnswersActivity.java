@@ -274,7 +274,7 @@ String strSchoolId="",strExamId="",strExamName="",strAcademicYearRange="",strCla
 
 
             try {
-                outObject.put("OperationName", "UploadExamImage");
+                outObject.put("OperationName", "uploadAnswerSheetsByStudentId");
                 JSONObject examData = new JSONObject();
                 examData.put("page_no", strPageNumber);
                 examData.put("SchoolId", strSchoolId);

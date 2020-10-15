@@ -121,6 +121,18 @@ public class RviewAdapterNoticeBoard extends RecyclerView.Adapter<RviewAdapterNo
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
             bankcardId = (CardView) itemView.findViewById(R.id.bankcardId);
             mContext = itemView.getContext();
+
+
+            tvText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvText.getText());
+                    Toast.makeText(context, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
         }
     }
 }

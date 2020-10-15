@@ -91,6 +91,55 @@ public class HmWrkRecyclerViewAdapter extends RecyclerView.Adapter<HmWrkRecycler
             tvDateHmCrd = (TextView) itemView.findViewById(R.id.tvDateHmCrd);
             tvChapterHmCrd = (TextView) itemView.findViewById(R.id.tvChapterHmCrd);
             tvSyllabusMessage = (TextView) itemView.findViewById(R.id.tvSyllabusMessage);
+
+            tvSubjectHmCrd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSubjectHmCrd.getText());
+                    Toast.makeText(hmwrkContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvHomeWorkHmCrd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvHomeWorkHmCrd.getText());
+                    Toast.makeText(hmwrkContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvDateHmCrd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDateHmCrd.getText());
+                    Toast.makeText(hmwrkContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvChapterHmCrd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvChapterHmCrd.getText());
+                    Toast.makeText(hmwrkContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvSyllabusMessage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSyllabusMessage.getText());
+                    Toast.makeText(hmwrkContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
         }
     }
     public interface OnHomeworkClickListener{

@@ -110,7 +110,29 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.MyView
             tvSylbsChapterName = (TextView) itemView.findViewById(R.id.tvSylbsChapterName);
             tvDescriptionMsg = (TextView) itemView.findViewById(R.id.tvDescriptionMsg);
             crdviewSyllabus = itemView.findViewById(R.id.crdviewSyllabus);
-                   }
+
+            tvSylbsChapterName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)sylbsContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSylbsChapterName.getText());
+                    Toast.makeText(sylbsContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+            tvDescriptionMsg.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)sylbsContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDescriptionMsg.getText());
+                    Toast.makeText(sylbsContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+        }
 
         public void diplayDiscription() {
             AlertDialog.Builder builder = new AlertDialog.Builder(sylbusActivity, R.style.MyAlertDialogStyles);

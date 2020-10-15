@@ -18,6 +18,7 @@ import com.vinuthana.vinvidya.activities.otheractivities.AssignmentActivity;
 import com.vinuthana.vinvidya.activities.otheractivities.EventsActivity;
 import com.vinuthana.vinvidya.activities.otheractivities.MainGalleryActivity;
 import com.vinuthana.vinvidya.activities.otheractivities.SyllabusActivity;
+import com.vinuthana.vinvidya.activities.otheractivities.VideosActivity;
 import com.vinuthana.vinvidya.utils.StudentSPreference;
 
 import java.util.ArrayList;
@@ -98,6 +99,11 @@ public class RviewAdapterOthers extends RecyclerView.Adapter<RviewAdapterOthers.
                         intent.putExtra("schoolId", strSchoolId);
                         break;
 
+                    case 5:
+                        intent = new Intent (context, VideosActivity.class);
+                        intent.putExtra("studentId", strStudentId);
+                        intent.putExtra("schoolId", strSchoolId);
+                        break;
 
 
                     default:
@@ -123,6 +129,17 @@ public class RviewAdapterOthers extends RecyclerView.Adapter<RviewAdapterOthers.
             tvText = (TextView) itemView.findViewById(R.id.tvText);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
             bankcardId = (CardView) itemView.findViewById(R.id.bankcardId);
+
+            tvText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvText.getText());
+                    Toast.makeText(context, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
         }
     }
 }

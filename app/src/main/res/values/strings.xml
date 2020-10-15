@@ -95,6 +95,7 @@
     <string name="key_homeworkData">homeworkData</string>
     <string name="key_leaveData">leaveData</string>
     <string name="key_ChapterName">ChapterName</string>
+    <string name="key_topic">topic</string>
     <string name="key_Edit_Student_Leave">Edit Student Leave</string>
     <string name="key_HomeWork">HomeWork</string>
     <string name="key_Day">Day</string>
@@ -139,6 +140,7 @@
     <string name="key_Set_Exam_Syllabus">Set Exam Syllabus</string>
     <string name="key_Current_Exam_Syllabus">Current Exam Syllabus</string>
     <string name="key_Chapter">Chapter</string>
+    <string name="key_video_link">video_link</string>
     <string name="key_Parent_Message">Parent Message</string>
     <string name="key_Send_Parent_Message">Send Parent Message</string>
     <string name="key_Description">Description</string>
@@ -246,6 +248,7 @@
     <string name="title_activity_class_notice">ClassNoticeActivity</string>
     <string name="title_activity_parents_message">ParentsMessageActivity</string>
     <string name="web_getClasswiseSubjects">getClasswiseSubjects</string>
-    <string name="web_getQuestionPaper">GetQuestionPaper</string>
+    <string name="web_getQuestionPaper">getQuestionPaperByStudentId</string>
+    <string name="key_btn_GetTopicWise_Videos">Get Topic Wise Videos</string>
 
 </resources>

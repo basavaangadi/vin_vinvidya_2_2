@@ -62,6 +62,47 @@ public class ReminderRecylcerViewAdapter extends RecyclerView.Adapter<ReminderRe
             tvRmndrSentDate = (TextView) itemView.findViewById(R.id.tvRmndrSntDate);
             tvRmndrOnDate = (TextView) itemView.findViewById(R.id.tvRmndrOnDate);
 
+            tvRmndrNoteTitle.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)rmdrContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvRmndrNoteTitle.getText());
+                    Toast.makeText(rmdrContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+            tvRmndrNote.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)rmdrContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvRmndrNote.getText());
+                    Toast.makeText(rmdrContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+            tvRmndrSentDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)rmdrContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvRmndrSentDate.getText());
+                    Toast.makeText(rmdrContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+            tvRmndrOnDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)rmdrContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvRmndrOnDate.getText());
+                    Toast.makeText(rmdrContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
         }
     }
 }

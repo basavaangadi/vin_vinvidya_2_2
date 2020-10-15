@@ -71,6 +71,45 @@ public class PrntNtRecyclerViewAdapter extends RecyclerView.Adapter<PrntNtRecycl
             tvPrtNtNote = (TextView) itemView.findViewById(R.id.tvPrtNtNote);
             tvPrtNtNoteSentDate = (TextView) itemView.findViewById(R.id.tvPrtNtNoteSentDate);
             tvPrtNtNoteOnDate = (TextView) itemView.findViewById(R.id.tvPrtNtNoteOnDate);
+
+            tvPrtNtNoteTitle.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)prnNtContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvPrtNtNoteTitle.getText());
+                    Toast.makeText(prnNtContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvPrtNtNote.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)prnNtContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvPrtNtNote.getText());
+                    Toast.makeText(prnNtContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvPrtNtNoteSentDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)prnNtContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvPrtNtNoteSentDate.getText());
+                    Toast.makeText(prnNtContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvPrtNtNoteOnDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)prnNtContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvPrtNtNoteOnDate.getText());
+                    Toast.makeText(prnNtContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
         }
     }
 }

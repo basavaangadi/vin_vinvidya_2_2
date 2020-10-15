@@ -57,6 +57,30 @@ public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.MyVi
             tvTimeTableSTime = (TextView) itemView.findViewById(R.id.tvTimeTableSTime);
             tvTimeTableSubject = (TextView) itemView.findViewById(R.id.tvTimeTableSubject);
            // tvTimeTableTeacher = (TextView) itemView.findViewById(R.id.tvTimeTableTeacher);
+            tvTimeTableSTime.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)timeTableContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvTimeTableSTime.getText());
+                    Toast.makeText(timeTableContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+            tvTimeTableSubject.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)timeTableContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvTimeTableSubject.getText());
+                    Toast.makeText(timeTableContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
+
+
         }
     }
 }

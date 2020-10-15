@@ -66,6 +66,44 @@ public class ExmMarksRecyclerJV  extends RecyclerView.Adapter<ExmMarksRecyclerJV
             tvExmMarksSubjectJV = (TextView) itemView.findViewById(R.id.tvExmMarksSubjectJV);
             tvMaxExmMarksJV = (TextView) itemView.findViewById(R.id.tvMaxExmMarksJV);
             tvExmMarksJV = (TextView) itemView.findViewById(R.id.tvExmMarksJV);
+
+            tvExmMarksDateJV.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvExmMarksDateJV.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvExmMarksSubjectJV.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvExmMarksSubjectJV.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvMaxExmMarksJV.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvMaxExmMarksJV.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvExmMarksJV.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvExmMarksJV.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
         }
     }
 }

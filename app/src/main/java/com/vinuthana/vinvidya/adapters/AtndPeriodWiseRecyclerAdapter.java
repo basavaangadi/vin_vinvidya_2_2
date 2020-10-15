@@ -79,6 +79,44 @@ public class AtndPeriodWiseRecyclerAdapter extends RecyclerView.Adapter<AtndPeri
             tvDayAtndCard = (TextView) itemView.findViewById(R.id.tvDayAtndCard);
             tvStatusAtndCard = (TextView) itemView.findViewById(R.id.tvStatusAtndCard);
             tvPeriodAtndCard = (TextView) itemView.findViewById(R.id.tvPeriodAtndCard);
+
+            tvDateAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDateAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvDayAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDayAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvStatusAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStatusAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvPeriodAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvPeriodAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
         }
     }
 }

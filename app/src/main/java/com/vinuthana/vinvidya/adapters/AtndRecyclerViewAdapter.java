@@ -75,6 +75,37 @@ public class AtndRecyclerViewAdapter extends RecyclerView.Adapter<AtndRecyclerVi
             tvDateAtndCard = (TextView) itemView.findViewById(R.id.tvDateAtndCard);
             tvDayAtndCard = (TextView) itemView.findViewById(R.id.tvDayAtndCard);
             tvStatusAtndCard = (TextView) itemView.findViewById(R.id.tvStatusAtndCard);
+
+            tvDateAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDateAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvDayAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDayAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvStatusAtndCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)ntcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStatusAtndCard.getText());
+                    Toast.makeText(ntcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
         }
     }
 }

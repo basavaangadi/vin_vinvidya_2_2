@@ -84,6 +84,48 @@ public class HwrkFbRecyclerViewAdapter extends RecyclerView.Adapter<HwrkFbRecycl
             tvCurHwFbDt = (TextView) itemView.findViewById(R.id.tvCurHwFbDt);
             /*tvCurHWFbHmChptName = (TextView) itemView.findViewById(R.id.tvCurHWFbHmChptName);
             tvCurHWFbHmDescription = (TextView) itemView.findViewById(R.id.tvCurHWFbHmDescription);*/
+
+
+            tvCurHWFbSub.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkFbContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvCurHWFbSub.getText());
+                    Toast.makeText(hmwrkFbContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvHWFbStatus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkFbContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvHWFbStatus.getText());
+                    Toast.makeText(hmwrkFbContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvCurHWFbHmDt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkFbContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvCurHWFbHmDt.getText());
+                    Toast.makeText(hmwrkFbContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvCurHwFbDt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)hmwrkFbContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvCurHwFbDt.getText());
+                    Toast.makeText(hmwrkFbContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
+
         }
     }
 }

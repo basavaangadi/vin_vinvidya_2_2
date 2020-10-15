@@ -38,6 +38,62 @@ public class FeesDetailsRecyclerViewAdapter  extends  RecyclerView.Adapter<FeesD
             tvBalAmt = view.findViewById(R.id.tvBalAmt);
           // CardView = view.findViewById(R.id.CardView);
 
+            tvDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDate.getText());
+                    Toast.makeText(mContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvChallanNum.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvChallanNum.getText());
+                    Toast.makeText(mContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvStudName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStudName.getText());
+                    Toast.makeText(mContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvPaid.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvPaid.getText());
+                    Toast.makeText(mContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvTotalAmt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvTotalAmt.getText());
+                    Toast.makeText(mContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvBalAmt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvBalAmt.getText());
+                    Toast.makeText(mContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
             if(strFeesType.equalsIgnoreCase("Admission Fees")){
                 tvBalAmt.setVisibility(View.VISIBLE);
             }

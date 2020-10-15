@@ -87,6 +87,16 @@ public class SubjectRecyclerAdapter extends RecyclerView.Adapter<SubjectRecycler
             imageView = (ImageView) itemView.findViewById(R.id.imageViewSyl);
             cardSyllabus = (CardView) itemView.findViewById(R.id.cardSyllabus);
 
+            tvSubjectSyl.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)subContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSubjectSyl.getText());
+                    Toast.makeText(subContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
             cardSyllabus.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

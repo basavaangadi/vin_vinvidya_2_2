@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.vinuthana.vinvidya"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 28
         versionCode 42
         versionName "20.08.01"
@@ -78,5 +78,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
     implementation 'com.daimajia.slider:library:1.1.5@aar'
     implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    //implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+
 }
 apply plugin: 'com.google.gms.google-services'

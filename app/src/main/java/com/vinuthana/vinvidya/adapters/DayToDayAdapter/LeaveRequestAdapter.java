@@ -159,7 +159,48 @@ public class LeaveRequestAdapter  extends RecyclerView.Adapter<LeaveRequestAdapt
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.show();*//*
             }*/
+
+            tvStudLeaveDispTitle.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)studLeaveContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStudLeaveDispTitle.getText());
+                    Toast.makeText(studLeaveContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+            tvStudLeaveDispDisc.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)studLeaveContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStudLeaveDispDisc.getText());
+                    Toast.makeText(studLeaveContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvStudLeaveDispToDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)studLeaveContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStudLeaveDispToDate.getText());
+                    Toast.makeText(studLeaveContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvStudLeaveDispFromDate.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)studLeaveContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStudLeaveDispFromDate.getText());
+                    Toast.makeText(studLeaveContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
         }
+
     }
 
     public interface onLeaveClickListener{

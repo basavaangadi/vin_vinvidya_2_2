@@ -84,6 +84,38 @@ public class LandingAdapter extends RecyclerView.Adapter<LandingAdapter.MyViewHo
             tvRollNoLanding = (TextView) itemView.findViewById(R.id.tvRlNoLanding);
             //studentImageViewLanding = (ImageView) itemView.findViewById(R.id.studentImageViewLanding);
             cardLanding = (CardView) itemView.findViewById(R.id.cardLanding);
+            tvStdNameLanding.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)landingContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStdNameLanding.getText());
+                    Toast.makeText(landingContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvStandardLanding.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)landingContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvStandardLanding.getText());
+                    Toast.makeText(landingContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvRollNoLanding.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)landingContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvRollNoLanding.getText());
+                    Toast.makeText(landingContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
+
+
+
             cardLanding.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

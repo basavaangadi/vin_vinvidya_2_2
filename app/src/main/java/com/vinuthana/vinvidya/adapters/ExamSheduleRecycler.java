@@ -64,6 +64,37 @@ public class ExamSheduleRecycler extends RecyclerView.Adapter<ExamSheduleRecycle
             tvDateExmSchedule = (TextView) itemView.findViewById(R.id.tvDateExmSchedule);
             tvExmTime = (TextView) itemView.findViewById(R.id.tvExmTime);
             tvSubExmSchedule = (TextView) itemView.findViewById(R.id.tvSubExmSchedule);
+
+
+            tvDateExmSchedule.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmschcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvDateExmSchedule.getText());
+                    Toast.makeText(exmschcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvExmTime.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmschcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvExmTime.getText());
+                    Toast.makeText(exmschcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvSubExmSchedule.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmschcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvSubExmSchedule.getText());
+                    Toast.makeText(exmschcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
         }
     }
 }

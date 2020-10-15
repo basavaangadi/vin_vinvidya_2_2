@@ -122,6 +122,19 @@ public class RecyclerAdapterDayToDay extends RecyclerView.Adapter<RecyclerAdapte
             tvText = (TextView) itemView.findViewById(R.id.tvText);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
             bankcardId = (CardView) itemView.findViewById(R.id.bankcardId);
+
+
+            tvText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvText.getText());
+                    Toast.makeText(context, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
         }
     }
 }

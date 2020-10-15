@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
     package="com.vinuthana.vinvidya">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,7 +21,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.examsection.PdfActivity"></activity>
+
+        <activity android:name=".activities.otheractivities.ViewVideosActivity"></activity>
+        <activity android:name=".activities.otheractivities.VideosActivity" />
+        <activity android:name=".activities.examsection.PdfActivity" />
         <activity android:name=".activities.examsection.UploadAnswersActivity" />
         <activity android:name=".activities.examsection.WriteExamActivity" />
         <activity android:name=".activities.examsection.ExamImageUploadActivity" />

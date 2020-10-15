@@ -62,6 +62,36 @@ public class ExmMarksRecylerGDGB  extends RecyclerView.Adapter<ExmMarksRecylerGD
             tvExmMarksSubjectGDGB = (TextView) itemView.findViewById(R.id.tvExmMarksSubjectGDGB);
             tvMaxExmMarks = (TextView) itemView.findViewById(R.id.tvMaxExmMarks);
             tvExmMarksGDGB = (TextView) itemView.findViewById(R.id.tvExmMarksGDGB);
+
+            tvExmMarksSubjectGDGB.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvExmMarksSubjectGDGB.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvMaxExmMarks.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvMaxExmMarks.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+            tvExmMarksGDGB.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ClipboardManager cm = (ClipboardManager)exmmrkcContext.getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(tvExmMarksGDGB.getText());
+                    Toast.makeText(exmmrkcContext, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+
+
         }
     }
 }

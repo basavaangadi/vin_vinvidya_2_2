@@ -16,6 +16,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.vinuthana.vinvidya.R;
 import com.vinuthana.vinvidya.activities.extraactivities.MainActivity;
 import com.vinuthana.vinvidya.adapters.FeesDetailsRecyclerViewAdapter;
