@@ -16,7 +16,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+//import androidx.appcompat.app.AppCompatActivity;
 
 import com.vinuthana.vinvidya.R;
 import com.vinuthana.vinvidya.activities.examsection.PdfActivity;
